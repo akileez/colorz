@@ -1,6 +1,6 @@
 {
   "name": "colorz",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ansi escaped color styling for the console&#x2F;terminal",
   "main": "index.js",
   "scripts": {
@@ -21,18 +21,32 @@
   "bugs": {
     "url": "https://github.com/akileez/colorz/issues"
   },
-  "license": {
-    "type": "ISC",
-    "url": "https://github.com/akileez/colorz/blob/master/LICENSE"
-  },
-  "keywords": [],
+  "license": "ISC",
+  "keywords": [
+    "ansi",
+    "color",
+    "colors",
+    "colour",
+    "cli",
+    "command",
+    "command-line",
+    "console",
+    "format",
+    "formatting",
+    "iTerm",
+    "log",
+    "logging",
+    "string",
+    "style",
+    "terminal",
+    "text",
+    "xterm"
+  ],
   "dependencies": {
   },
   "devDependencies": {
   },
-  "files": [
-    "LICENSE",
-    "index.js",
-    "README.md"
+  "files":[
+    "index.js"
   ]
 }
