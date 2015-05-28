@@ -1,0 +1,38 @@
+{
+  "name": "colorz",
+  "version": "0.1.0",
+  "description": "Ansi escaped color styling for the console&#x2F;terminal",
+  "main": "index.js",
+  "scripts": {
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/akileez/colorz.git"
+  },
+  "author": {
+    "name": "Keith Williams",
+    "email": "git@keeda.net",
+    "url": "https://github.com/akileez/colorz"
+  },
+  "homepage": "https://github.com/akileez/colorz",
+  "bugs": {
+    "url": "https://github.com/akileez/colorz/issues"
+  },
+  "license": {
+    "type": "ISC",
+    "url": "https://github.com/akileez/colorz/blob/master/LICENSE"
+  },
+  "keywords": [],
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "files": [
+    "LICENSE",
+    "index.js",
+    "README.md"
+  ]
+}
