@@ -51,7 +51,7 @@ var styles = {
   bbBlue        : [104, 49],
   bbMagenta     : [105, 49],
   bbCyan        : [106, 49],
-  bbWhite       : [107, 49],
+  bbWhite       : [107, 49]
   // exposure
 }
 
