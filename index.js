@@ -76,7 +76,13 @@ function strip (str) {
 }
 
 function expose (style, str, noColor) {
+  if (typeof str === 'boolean') {
+    noColor = str
+    str = 'Hello World'
+  }
+
   str = str || 'Hello World'
+
   return noColor
     ? style + ': ' + JSON.stringify(colorz[style](str))
     : style + ': '
