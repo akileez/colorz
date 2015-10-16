@@ -1,6 +1,6 @@
 {
   "name": "colorz",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Ansi escaped color styling for the console and terminal",
   "main": "index.js",
   "scripts": {
