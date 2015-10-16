@@ -63,19 +63,19 @@ var styles = {
 }
 
 forEach(keys(styles), function (style) {
-  var open = ['\u001b[', styles[style][0], 'm'].join('')
-  var clos = ['\u001b[', styles[style][1], 'm'].join('')
+  var open = '\u001b[' + styles[style][0] + 'm'
+  var clos = '\u001b[' + styles[style][1] + 'm'
 
   colorz[style] = function (msg) {
-    return [open, msg, clos].join('')
+    return open + msg + clos
   }
 })
 
-colorz.strip = function (str) {
+function strip (str) {
   return str.replace(/(?:\u001b\[)\d+m/g, '')
 }
 
-colorz.expose = function (style, str) {
+function expose (style, str) {
   var text = style + ': ' + JSON.stringify(colorz[style](str))
   return text
 }
@@ -102,3 +102,5 @@ function forEach (arr, fn) {
 }
 
 module.exports = colorz
+module.exports.strip = strip
+module.exports.expose = expose
