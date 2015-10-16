@@ -4,6 +4,9 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
 
+## Why?
+It loads fast. It's lightweight. It has no dependencies. I wanted to learn.
+
 ## Installation
 ```bash
 $ npm install colorz
@@ -42,12 +45,19 @@ console.log(red('Hello World'))
 ```
 
 ## API
+#### `.[style](msg)`
+#### `.strip()`
+#### `.expose(color:STRING[, text:STRING, noColor:BOOLEAN])`
+Expose the ansi escape strings in color (default) 
+
+![](./img/colorz.expose.png)
+
 ```js
-
+console.log(colorz.expose('red'))
+console.log(colorz.expose('blue', 'See me now'))
+console.log(colorz.expose('bgYellow', 'I am a background', false))
+console.log(colorz.expose('magenta', true))
 ```
-
-## Why?
-It loads fast. It's lightweight. It has no dependencies. I wanted to learn.
 
 ## See Also
 - chalk
