@@ -14,6 +14,8 @@ $ npm install colorz
 see the example.js for further usage
 
 ```js
+var colorz = require('colorz')
+
 colorz.red('because')
 colorz.brRed('because')
 colorz.green('because')
@@ -30,6 +32,13 @@ colorz.bgRed('da da da da da da da, dum dum')
 colorz.underline(colorz.cyan('we\'re off to see the wizard'))
 colorz.dim('the wonderful wizard of OZ!')
 colorz.bold('hello world')
+
+// you can also make things a bit easier for yourself 
+const red = colorz.red
+const blu = colorz.blue
+// etc, etc.
+
+console.log(red('Hello World'))
 ```
 
 ## API
@@ -41,7 +50,8 @@ colorz.bold('hello world')
 It loads fast. It's lightweight. It has no dependencies. I wanted to learn.
 
 ## See Also
-- 
+- chalk
+- colors
 
 ## License
 [ISC](https://tldrlegal.com/license/ISC-license)
