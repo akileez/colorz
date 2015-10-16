@@ -75,9 +75,12 @@ function strip (str) {
   return str.replace(/(?:\u001b\[)\d+m/g, '')
 }
 
-function expose (style, str) {
-  var text = style + ': ' + JSON.stringify(colorz[style](str))
-  return text
+function expose (style, str, noColor) {
+  return noColor
+    ? style + ': ' + JSON.stringify(colorz[style](str))
+    : style + ': '
+      + JSON.stringify(colorz[style](str))
+      .replace(/(\\u001b\[\d+m)/g, colorz[style](['$1']))
 }
 
 function keys (obj) {
