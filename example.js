@@ -1,11 +1,11 @@
 var ansi = require('./')
 
-var cols = ['white', 'black', 'gray', 'blue', 'cyan', 'green', 'magenta', 'red','yellow']
+var cols = ['white', 'black', 'gray', 'blue', 'cyan', 'green', 'magenta', 'red', 'yellow']
 
 console.log('\nForeground Colors\n')
 cols.forEach(function (col) {
   var colored = ansi[col](col)
-  var bright = ['br', col.substr(0,1).toUpperCase(), col.substr(1)].join('')
+  var bright = ['br', col.substr(0, 1).toUpperCase(), col.substr(1)].join('')
   console.log(colored)
   console.log(ansi[bright](col))
 })
@@ -13,8 +13,8 @@ cols.forEach(function (col) {
 console.log('\nBackground Colors\n')
 
 cols.forEach(function (col) {
-  var background = ['bg', col.substr(0,1).toUpperCase(), col.substr(1)].join('')
-  var brBackground = ['bb', col.substr(0,1).toUpperCase(), col.substr(1)].join('')
+  var background = ['bg', col.substr(0, 1).toUpperCase(), col.substr(1)].join('')
+  var brBackground = ['bb', col.substr(0, 1).toUpperCase(), col.substr(1)].join('')
   if (col === 'black' || col === 'gray' || col === 'red') {
     console.log(ansi[background](col))
     console.log(ansi[brBackground](col))
@@ -27,15 +27,15 @@ cols.forEach(function (col) {
 console.log(ansi.strip(ansi.red('Hello World')))
 console.log(ansi.expose('red', 'This is ska'))
 var colors = {
-  "num" : "cyan",
-  "str" : "magenta",
-  "bool"  : "red",
-  "undef" : "grey",
-  "null"  : "grey",
-  "attr"  : "green",
-  "quot"  : "magenta",
-  "punc"  : "yellow",
-  "brack" : "yellow"
+  'num' : 'cyan',
+  'str' : 'magenta',
+  'bool'  : 'red',
+  'undef' : 'grey',
+  'null'  : 'grey',
+  'attr'  : 'green',
+  'quot'  : 'magenta',
+  'punc'  : 'yellow',
+  'brack' : 'yellow'
 }
 
 function c (str, prop) {
