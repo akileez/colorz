@@ -85,9 +85,7 @@ function keys (obj) {
   var key
 
   for (key in obj) {
-    if (obj.hasOwnProperty(key)) {
-      result.push(key)
-    }
+    if (obj.hasOwnProperty(key)) result.push(key)
   }
   return result
 }
@@ -96,9 +94,7 @@ function forEach (arr, fn) {
   var i = -1
   var len = arr.length
 
-  while (++i < len) {
-    if (fn(arr[i], i, arr) === false) break
-  }
+  while (++i < len) if (fn(arr[i], i, arr) === false) break
 }
 
 module.exports = colorz
