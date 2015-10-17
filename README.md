@@ -7,7 +7,7 @@
 > Ansi escaped color styling for the console/terminal
 
 ## Why?
-It loads fast. It's lightweight. It has no dependencies. I wanted to learn.
+It loads fast. It runs fast. It's lightweight. It has no dependencies. I wanted to learn.
 
 ## Installation
 ```bash
@@ -131,8 +131,14 @@ console.log(colorz.expose('magenta', true))
 ![](./img/colorz.expose.png)
 
 ## See Also
-- chalk
-- colors
+- [chalk](https://www.npmjs.com/package/chalk). Terminal string styling done right. Much color.  
+- [colors](https://www.npmjs.com/package/colors). get colors in your node.js console  
+- [colour.js](https://github.com/dcodeIO/colour.js). A cored, fixed, documented and optimized version of the popular `colors.js`  
+- [neocolor](https://www.npmjs.com/package/neocolor). Minimal library for colored console output  
+- [ansi-wrap](https://www.npmjs.com/package/ansi-wrap). Create ansi colors by passing the open and close codes.  
+- [clor](https://github.com/bucaran/clor). Sexy terminal styles   
+- [colorful](https://github.com/lepture/colorful). colorful environment for command line tools in node  
+
 
 ## License
 [ISC](https://tldrlegal.com/license/ISC-license)
