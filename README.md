@@ -4,6 +4,8 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
 
+> Ansi escaped color styling for the console/terminal
+
 ## Why?
 It loads fast. It's lightweight. It has no dependencies. I wanted to learn.
 
@@ -14,7 +16,7 @@ $ npm install colorz
 
 ## Usage
 
-see the example.js for further usage
+see the [example.js](example.js) for further usage
 
 ```js
 var colorz = require('colorz')
@@ -43,14 +45,81 @@ const blu = colorz.blue
 
 console.log(red('Hello World'))
 ```
+![](./img/colorz.jpg)
+
 
 ## API
 #### `.[style](msg)`
-#### `.strip()`
+
+**modifiers**  
+  reset         
+  bold          
+  dim           
+  italic        
+  underline     
+  inverse       
+  hidden        
+  strikethrough 
+  
+  **foregrounds**  
+  black         
+  gray          
+  grey          
+  red           
+  green         
+  yellow        
+  blue          
+  magenta       
+  cyan          
+  white         
+  
+  **bright foregrounds**  
+  brBlack       
+  brGray        
+  brGrey        
+  brRed         
+  brGreen       
+  brYellow      
+  brBlue        
+  brMagenta     
+  brCyan        
+  brWhite       
+  
+  **backgrounds**  
+  bgBlack       
+  bgGray        
+  bgGrey        
+  bgRed         
+  bgGreen       
+  bgYellow      
+  bgBlue        
+  bgMagenta     
+  bgCyan        
+  bgWhite       
+  
+  **bright backgrounds**  
+  bbBlack       
+  bbGray        
+  bbGrey        
+  bbRed         
+  bbGreen       
+  bbYellow      
+  bbBlue        
+  bbMagenta     
+  bbCyan        
+  bbWhite       
+
+#### `.strip(ansiDecoratedTextMsg)`
+Strip the ansi escaped sequences off the text   
+
+```js
+var text = colorz.cyan('Hello')
+console.log(colorz.strip(text))
+// --> Hello
+```
+
 #### `.expose(color:STRING[, text:STRING, noColor:BOOLEAN])`
 Expose the ansi escape strings in color (default) 
-
-![](./img/colorz.expose.png)
 
 ```js
 console.log(colorz.expose('red'))
@@ -58,6 +127,8 @@ console.log(colorz.expose('blue', 'See me now'))
 console.log(colorz.expose('bgYellow', 'I am a background', false))
 console.log(colorz.expose('magenta', true))
 ```
+
+![](./img/colorz.expose.png)
 
 ## See Also
 - chalk
