@@ -25,7 +25,7 @@ cols.forEach(function (col) {
 })
 
 console.log(ansi.strip(ansi.red('Hello World')))
-console.log(ansi.expose('red', 'This is ska'))
+console.log(ansi.expose('red', 'This is ska', false))
 var colors = {
   'num' : 'cyan',
   'str' : 'magenta',
@@ -75,3 +75,11 @@ console.log(ansi.white('of'))
 console.log(ansi.brWhite('because'))
 console.log(ansi.gray('the'))
 console.log(ansi.grey('because'))
+
+console.log(ansi.expose('red', true))
+console.log()
+console.log(ansi.expose('red'))
+console.log(ansi.expose('blue', 'See me now'))
+console.log(ansi.expose('bgYellow', 'I am a background', false))
+console.log(ansi.expose('magenta', true))
+
