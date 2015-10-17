@@ -1,7 +1,7 @@
 # colorz
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
+[![schoolmarm-standard-style][marm-image]][marm-url]
+[![experimental][stability-image]][stability-url]
 [![Downloads][downloads-image]][downloads-url]
 
 > Ansi escaped color styling for the console/terminal
@@ -145,9 +145,9 @@ console.log(colorz.expose('magenta', true))
 
 [npm-image]: https://img.shields.io/npm/v/colorz.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/colorz
-[travis-image]: https://img.shields.io/travis/akileez/colorz.svg?style=flat-square
-[travis-url]: https://travis-ci.org/akileez/colorz
-[coveralls-image]: https://img.shields.io/coveralls/akileez/colorz.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/akileez/colorz?branch=master
+[marm-image]: https://img.shields.io/badge/code%20style-marm-brightgreen.svg?style=flat-square
+[marm-url]: https://github.com/akileez/eslint-config-marm
+[stability-image]: https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square
+[stability-url]: https://github.com/akileez/colorz
 [downloads-image]: http://img.shields.io/npm/dm/colorz.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/colorz
