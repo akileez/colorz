@@ -45,12 +45,14 @@ const blu = colorz.blue
 
 console.log(red('Hello World'))
 ```
-![](./img/colorz.jpg)
+![My iterm setup. YMMV](./img/colorz.jpg)
 
 
 ## API
 #### `.[style](msg)`
+Enter a syle and your text message, i.e., `colorz.inverse('Hello')`
 
+List of styles used by the API
 **modifiers**  
   reset         
   bold          
@@ -61,7 +63,7 @@ console.log(red('Hello World'))
   hidden        
   strikethrough 
   
-  **foregrounds**  
+**foregrounds**  
   black         
   gray          
   grey          
@@ -73,7 +75,7 @@ console.log(red('Hello World'))
   cyan          
   white         
   
-  **bright foregrounds**  
+**bright foregrounds**  
   brBlack       
   brGray        
   brGrey        
@@ -85,7 +87,7 @@ console.log(red('Hello World'))
   brCyan        
   brWhite       
   
-  **backgrounds**  
+**backgrounds**  
   bgBlack       
   bgGray        
   bgGrey        
@@ -97,7 +99,7 @@ console.log(red('Hello World'))
   bgCyan        
   bgWhite       
   
-  **bright backgrounds**  
+**bright backgrounds**  
   bbBlack       
   bbGray        
   bbGrey        
@@ -122,15 +124,16 @@ console.log(colorz.strip(text))
 Expose the ansi escape strings in color (default) 
 
 ```js
-console.log(colorz.expose('red'))
-console.log(colorz.expose('blue', 'See me now'))
-console.log(colorz.expose('bgYellow', 'I am a background', false))
-console.log(colorz.expose('magenta', true))
+console.log(colorz.expose('green'))
+console.log(colorz.expose('cyan', 'See me now'))
+console.log(colorz.expose('bgYellow', 'I am a background', true))
+console.log(colorz.expose('magenta', false))
 ```
 
 ![](./img/colorz.expose.png)
 
 ## See Also
+There are many ansi escape terminal coloring applications running in the wild. Here are a few to start with:   
 - [chalk](https://www.npmjs.com/package/chalk). Terminal string styling done right. Much color.  
 - [colors](https://www.npmjs.com/package/colors). get colors in your node.js console  
 - [colour.js](https://github.com/dcodeIO/colour.js). A cored, fixed, documented and optimized version of the popular `colors.js`  
